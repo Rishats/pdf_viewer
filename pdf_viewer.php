@@ -1,11 +1,10 @@
 <?php
 if( isset($_GET['pdf']) && !empty( $_GET['pdf'] ) ) 
 {
-	$file = dirname(__FILE__).'/data/content/files/'.$_GET['pdf'];
+	$file = dirname(__FILE__).'/files/'.$_GET['pdf'];
 
 	if (!file_exists($file)) 
 	{
-        var_dump($_GET);
         exit ('Такого файла не существует');
     }
 
